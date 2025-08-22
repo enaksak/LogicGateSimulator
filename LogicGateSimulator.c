@@ -7,6 +7,14 @@ int OR(int a,int b){
     return a||b;
 }
 
+int NOT(int a){
+    return !a;
+}
+
+
+
+
+
 
 
 
@@ -58,11 +66,8 @@ int main(){
             printf("Enter A (0/1)\n");
             scanf("%d",&a);
 
-            printf("Enter B (0/1)\n");
-            scanf("%d",&b);
-
-            printf("Result: %d\n",NOT(a,b));
-            truth_table_2input("NOT");
+            printf("Result: %d\n",NOT(a));
+            truth_table_NOT();
             break;
 
         case 4:
