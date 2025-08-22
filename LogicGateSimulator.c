@@ -15,6 +15,9 @@ int XOR(int a,int b){
     return a^b;
 }
 
+int NAND(int a,int b){
+    return !(a && b);
+}
 
 
 
