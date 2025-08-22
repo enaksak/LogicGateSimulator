@@ -23,7 +23,9 @@ int NOR(int a,int b){
     return !(a || b);
 }
 
-
+int XNOR(int a,int b){
+    return !(a ^ b);
+}
 
 
 
