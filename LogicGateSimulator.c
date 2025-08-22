@@ -29,6 +29,47 @@ int XNOR(int a,int b){
     return !(a ^ b);
 }
 
+//Truth Table for 2inputs
+
+void truth_table_2input(char *gate){
+    int a,b;
+    printf("\nTruth Table for %s gate:\n",gate);
+    printf("A B | OUT\n");
+    printf("---------\n");
+    for (a = 0; a <=1; a++)
+    {
+        for ( b = 0; b <= 1; b++)
+        {
+            if (gate == "AND")
+            {
+                printf("%d %d | %d\n",a,b,AND(a,b));
+            }
+            else if (gate == "OR")
+            {
+                printf("%d %d | %d\n",a,b,OR(a,b));
+            }
+            else if (gate == "XOR")
+            {
+                printf("%d %d | %d\n",a,b,XOR(a,b));
+            }
+            else if (gate == "NAND")
+            {
+                printf("%d %d | %d\n",a,b,NAND(a,b));
+            }
+            else if (gate == "NOR")
+            {
+                printf("%d %d | %d\n",a,b,NOR(a,b));
+            }
+            else if (gate == "XNOR")
+            {
+                printf("%d %d | %d\n",a,b,XNOR(a,b));
+            }
+        }
+        
+    }
+    
+}
+
 
 
 
