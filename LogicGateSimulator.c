@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+int AND(int a,int b){
+    return a&&b;
+}
 
 
 
