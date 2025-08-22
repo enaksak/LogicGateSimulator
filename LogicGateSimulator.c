@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+//Logic Gate Functions
 int AND(int a,int b){
     return a&&b;
 }
