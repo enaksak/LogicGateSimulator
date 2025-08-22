@@ -70,6 +70,19 @@ void truth_table_2input(char *gate){
     
 }
 
+//Truth Table for NOT gate
+void truth_table_NOT(){
+    int a;
+    printf("\nTruth Table for NOT gate:\n");
+    printf("A | OUT\n");
+    printf("--------\n");
+    for ( a =0; a <= 1; a++)
+    {
+        printf("%d | %d\n",a,NOT(a));
+    }
+    
+}
+
 
 
 
